@@ -1,0 +1,46 @@
+header{
+    background-color: lightskyblue;
+}
+footer{
+    background-color: lightgreen;
+}
+#modoBlanco{
+    background-color: #F4F4F4;
+}
+#modoOscuro{
+    background-color: rgb(13, 17, 23);
+    color:white;
+}
+#botonBlanco{
+    background:white;
+    cursor:pointer;
+}
+#botonNegro{
+    background:black;
+    color:white;
+    cursor:pointer;
+}
+.zonaProyectos{
+    border-style:solid;
+    width:90%;
+    height:auto;
+    margin:0 auto;
+    text-align:center;
+}
+.proyectos{
+    display:inline-block;
+    width:300px;
+    height:200px;
+    border-style:solid;
+    background-size: 100% 100%;
+    margin:10px;
+    border-radius: 8px;
+}
+.proyectos:hover{
+    transition: transform 1s ease;
+	transform: scale(1.2);
+}
+.proyectos:not(:hover){
+    transition: transform 1s ease;
+    transform: scale(1);
+}

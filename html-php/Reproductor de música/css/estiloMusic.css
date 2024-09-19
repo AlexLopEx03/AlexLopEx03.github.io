@@ -1,0 +1,15 @@
+header{
+    background-color: black;
+}
+body{
+    background-color: #25292e;
+    color:white;
+}
+footer{
+    background-color: black;
+}
+main div{
+    height:200px;
+    border-style:solid;
+    border-color:grey
+}

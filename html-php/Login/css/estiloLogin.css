@@ -1,0 +1,46 @@
+body{
+    background-color:grey;
+}
+video{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index: -1;
+}
+#formulario{
+    position:absolute;
+    background-color: white;
+    width:220px;
+    height:400px;
+    margin:5%;
+    border-radius:4%;
+    padding:2%;
+}
+.boton_de_inicio{
+    background-color: lightgreen;
+    border:none;
+    width:90%;
+    margin-top:40%;
+    cursor:not-allowed;
+}
+p{
+    margin-bottom: 4%;
+}
+img{
+    width:15px;
+    height:15px;
+    margin-right:2%;
+}
+.cambiarFondo_1{
+    position: absolute;
+    z-index: 3;
+}
+.botonesDeFondo{
+    visibility: hidden;
+}
+.barraDeBotones:hover .botonesDeFondo{
+    visibility: visible;
+}
