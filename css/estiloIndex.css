@@ -20,13 +20,6 @@ footer{
     color:white;
     cursor:pointer;
 }
-.zonaProyectos{
-    border-style:solid;
-    width:90%;
-    height:auto;
-    margin:0 auto;
-    text-align:center;
-}
 .proyectos{
     display:inline-block;
     width:300px;
