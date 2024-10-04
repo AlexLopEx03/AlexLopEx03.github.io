@@ -10,7 +10,7 @@ video{
     object-fit:cover;
     z-index: -1;
 }
-#formulario{
+#formularioLogin{
     position:absolute;
     background-color: white;
     width:220px;
