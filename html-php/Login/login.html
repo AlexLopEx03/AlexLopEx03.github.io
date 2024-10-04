@@ -32,7 +32,7 @@
                     <input type="checkbox">Recordar contraseña
                 </label>
                 <button type="submit" class="boton_de_inicio" title="Funcionalidad sin implementar"><b>Iniciar sesión</b></button>
-                <p>¿No te has registrado? <a href="../Registro/registro.html">Regístrate</a></p>
+                <p>¿No te has registrado? <a onclick="document.getElementById('formularioLogin').style.display = 'none';document.getElementById('formularioRegistro').style.display = 'block'">Inicia sesión</a></p>
             </form>
             <form id="formularioRegistro" action="" style="display:none">
                 <h1>Registrarse</h1>
@@ -50,7 +50,7 @@
                 <input type="password" placeholder="Misma contraseña" name="psw" required>
                 <button type="submit" class="boton_de_registro" title="Funcionalidad sin implementar"><b>Registrarse</b></button>
                 <p>¿Ya te has registrado?</p>
-                <a onclick="document.getElementById('formularioLogin').style.display = 'block';document.getElementById('formularioRegistro').style.display = 'display'">Inicia sesión</a>
+                <a onclick="document.getElementById('formularioLogin').style.display = 'block';document.getElementById('formularioRegistro').style.display = 'none'">Inicia sesión</a>
             </form>          
             <!--
             
