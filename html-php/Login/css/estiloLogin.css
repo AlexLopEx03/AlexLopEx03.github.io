@@ -35,6 +35,13 @@ video{
     margin-top:40%;
     cursor:not-allowed;
 }
+.boton_de_registro{
+    background-color: lightgreen;
+    border:none;
+    width:90%;
+    margin-top:20%;
+    cursor:not-allowed;
+}
 p{
     margin-bottom: 4%;
 }
