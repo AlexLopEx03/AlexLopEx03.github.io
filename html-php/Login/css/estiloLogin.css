@@ -10,7 +10,16 @@ video{
     object-fit:cover;
     z-index: -1;
 }
-#formularioLogin #formularioRegistro{
+#formularioLogin{
+    position:absolute;
+    background-color: white;
+    width:220px;
+    height:400px;
+    margin:5%;
+    border-radius:4%;
+    padding:2%;
+}
+#formularioRegistro{
     position:absolute;
     background-color: white;
     width:220px;
