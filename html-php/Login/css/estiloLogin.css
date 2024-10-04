@@ -10,7 +10,16 @@ video{
     object-fit:cover;
     z-index: -1;
 }
-#formulario{
+#formularioLogin{
+    position:absolute;
+    background-color: white;
+    width:220px;
+    height:400px;
+    margin:5%;
+    border-radius:4%;
+    padding:2%;
+}
+#formularioRegistro{
     position:absolute;
     background-color: white;
     width:220px;
@@ -24,6 +33,13 @@ video{
     border:none;
     width:90%;
     margin-top:40%;
+    cursor:not-allowed;
+}
+.boton_de_registro{
+    background-color: lightgreen;
+    border:none;
+    width:90%;
+    margin-top:20%;
     cursor:not-allowed;
 }
 p{
