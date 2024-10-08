@@ -3,26 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Visualizador de Audio</title>
     <link rel="stylesheet" href="css/estiloMusic.css">
-    <script>
-
-    </script>
 </head>
 <body>
-    <header>
-        <p>Header de ejemplo</p>
-    </header>
-    <main>
-        <div>
-            <p>Div de ejemplo</p>
-        </div>
-        <div>
-            <p>Div de ejemplo</p>
-        </div>
-    </main>
-    <footer>
-        <p>Footer de ejemplo</p>
-    </footer>
+    <div class="content">
+        <h1>Nos fumigan con aviones<br>Audio de prueba</h1>
+        <audio id="audio-player" controls>
+            <source src="Michael Jackson - Billie Jean (Lyrics).mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <canvas id="audio-visualizer"></canvas>
+
+    <script src="javascript/script.js"></script>
 </body>
 </html>
