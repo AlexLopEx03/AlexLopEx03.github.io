@@ -1,42 +1,122 @@
-header{
-    background-color: lightskyblue;
-}
-footer{
-    background-color: lightgreen;
-}
-#modoBlanco{
-    background-color: #F4F4F4;
-}
-#modoOscuro{
-    background-color: rgb(13, 17, 23);
+body{
+    background-color:#0D1117;
     color:white;
+    font-weight:700;
+    letter-spacing:1.8px;
+    margin-left:5%;
+    margin-right:5%;
 }
-#botonBlanco{
-    background:white;
-    cursor:pointer;
+.zona-navegable, .zona-inicio, .zona-proyectos , .zona-conocimientos, .zona-personal, .zona-contacto, footer{
+    border-radius:2em;
+    margin-bottom:5%;
+    background:#151B23;
 }
-#botonNegro{
-    background:black;
-    color:white;
-    cursor:pointer;
+.zona-inicio, .zona-proyectos , .zona-conocimientos, .zona-personal, .zona-contacto, footer{
+    padding:40px;
 }
-img{
-    width:450px;
+.zona-navegable:hover, .zona-inicio:hover, .zona-proyectos:hover, .zona-conocimientos:hover, .zona-personal:hover, .zona-contacto:hover, footer:hover{
+    background-color:#222333;
+}
+.zona-navegable{
+    height:70px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    align-items:center;
+}
+.elemento-navegable{
+    text-align:center;
+    width:25%;
+}
+.elemento-navegable:hover{
+    text-decoration:underline;
+}
+main{
+    display:flex;
+    flex-flow:column wrap;
+}
+.zona-inicio{
+    display:flex;
+    flex-flow:column wrap;
     height:300px;
 }
-/*.proyectos{
-    display:inline-block;
-    width:300px;
-    height:200px;
-    background-size: 100% 100%;
-    margin:10px;
-    border-radius: 8px;
-}*/
-.proyectos:hover{
-    transition: transform 1s ease;
-	transform: scale(1.2);
+.zona-proyectos{
+    display:flex;
+    flex-flow:column wrap;
+    justify-content:space-between;
+    height:1700px;
 }
-.proyectos:not(:hover){
-    transition: transform 1s ease;
+.zona-proyectos>h1, .zona-conocimientos>h1, .zona-personal>h1{
+    text-align:center;
+}
+.proyecto{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    height:300px;
+}
+.elemento-proyecto{
+    width:45%;
+}
+.elemento-proyecto>img{
+    width:100%;
+    height:100%;
+    border-radius:2em;
+}
+.elemento-proyecto>h3{
+    text-align:center;
+}
+.zona-conocimientos{
+    display:flex;
+    flex-flow:column wrap;
+}
+.lenguajes-conocidos{
+    display:flex;
+    flex-flow:row wrap;
+}
+.lenguajes-de-interes{
+    display:flex;
+    flex-flow:row wrap;
+}
+.tecnologias-conocidas{
+    display:flex;
+    flex-flow:row wrap;
+}
+.tecnologias-de-interes{
+    display:flex;
+    flex-flow:row wrap;
+}
+.zona-personal{
+    display:flex;
+    justify-content:center;
+    height:300px;
+}
+.zona-contacto{
+    display:flex;
+    justify-content:center;
+    height:300px;
+}
+footer{
+    display:flex;
+    height:200px;
+}
+.icon img{
+    width:100%;
+    height:100%;
+}
+.icon{
+    width:80px;
+    height:80px;
+    margin:10px;
+}
+img[src*="java"],img[src*="javascript"],img[src*="typescript"],img[src*="flask"],img[src*="pandas"],img[src*="symfony"],img[src*="thymeleaf"]{
+    border-radius:10px;
+}
+.icon img:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+.icon img:not(:hover){
     transform: scale(1);
+    transition: transform 0.5s ease;
 }

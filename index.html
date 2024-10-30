@@ -3,34 +3,140 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>1.3</title>
+        <title>1.4</title>
         <link rel="stylesheet" href="css/estiloIndex.css">
-    </head>
-    <body id="modoBlanco">
-        <header>
-            <h1 id="texto">Header de ejemplo</h1>
-        </header>
-        <p>
-            <button id="botonBlanco" onclick="document.getElementById('modoOscuro').id ='modoBlanco'">Modo Blanco</button>
-            <button id="botonNegro" onclick="document.getElementById('modoBlanco').id ='modoOscuro'">Modo Oscuro</button>
-        </p>
-        <p>
-            <a href="html-php/Login/login.html">Inicia sesión</a>
-            <a href="html-php/Reproductor de música/music.html">Música</a>
-        </p>
-        <p style="text-align: center; font-size:20px">Área de proyectos provisional</p>
-        <div>
-            <a style="width:400px;height:200px" href="html-php/Login/login.html">
-                <img src="media/Captura_220629.png" title="Inicio de sesión y registro">
-            </a>    
-            <!--
-            <div class="proyectos" onclick="window.location='html-php/Login/login.html'" style="background-image:url(media/Captura_220629.png);" title="Inicio de sesión y registro">
-            </div>
-            -->
-        </div>
-        <footer>
-            <h1>Footer de ejemplo</h1>
-        </footer>
         <script src="javascript/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="zona-navegable">
+                <div onclick="menu('id-inicio')" class="elemento-navegable" id="nav-inicio">
+                    <p>Inicio</p>
+                </div>
+                <div onclick="menu('id-proyectos')" class="elemento-navegable" id="nav-proyectos">
+                    <p>Proyectos</p>
+                </div>
+                <div onclick="menu('id-conocimientos')" class="elemento-navegable" id="nav-conocimientos">
+                    <p>Conocimientos</p>
+                </div>
+                <div onclick="menu('id-contacto')" class="elemento-navegable" id="nav-contacto">
+                    <p>Contacto</p>
+                </div>
+                <div onclick="menu('id-acercaDeMi')" class="elemento-navegable" id="nav-acercaDeMi">
+                    <p>Acerca de mí</p>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="zona-inicio" id="id-inicio">
+                <h1>Inicio</h1>
+                <h2>Página web provisional</h2>
+                <p>Ver página completa</p>
+                <a href="html-php/Login/login.html">Login</a>
+                <a href="html-php/Reproductor de música/music.html">Música</a>
+            </div>
+            <div class="zona-proyectos" id="id-proyectos">
+                <h1>Proyectos personales</h1>
+                <div class="proyecto">
+                    <div class="elemento-proyecto">
+                        <h3>Inicio de Sesión y Registro</h3>
+                        <p>Texto de ejemplo</p>
+                    </div>
+                    <div class="elemento-proyecto">
+                        <img src="media/ejemplo.png">
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="elemento-proyecto">
+                        <img src="media/ejemplo.png">
+                    </div>
+                    <div class="elemento-proyecto">
+                        <h3>Reproductor de música</h3>
+                        <p>Texto de ejemplo</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="elemento-proyecto">
+                        <h3>Tienda Online</h3>
+                        <p>Texto de ejemplo</p>
+                    </div>
+                    <div class="elemento-proyecto">
+                        <img src="media/ejemplo.png">
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="elemento-proyecto">
+                        <img src="media/ejemplo.png">
+                    </div>
+                    <div class="elemento-proyecto">
+                        <h3>Gráficas de datos</h3>
+                        <p>Texto de ejemplo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="zona-conocimientos" id="id-conocimientos">
+                <h1>Conocimientos</h1>
+                <p>Lenguajes que conozco:</p>
+                <div class="lenguajes-conocidos">
+                    <div class="icon"><img src="media/lenguajes/html.png" title="HTML-5"></div>
+                    <div class="icon"><img src="media/lenguajes/css.png" title="CSS-3"></div>
+                    <div class="icon"><img src="media/lenguajes/javascript.png" title="JavaScript"></div>
+                    <div class="icon"><img src="media/lenguajes/sql.png" title="SQL"></div>
+                    <div class="icon"><img src="media/lenguajes/php.png" title="PHP"></div>
+                    <div class="icon"><img src="media/lenguajes/java.png" title="Java"></div>
+                    <div class="icon"><img src="media/lenguajes/python.png" title="Python"></div>
+                </div>
+                <p>Tecnologías que conozco:</p>
+                <div class="tecnologias-conocidas">
+                    <div class="icon"><img src="media/lenguajes/git.png" title="Git"></div>
+                    <div class="icon"><img src="media/lenguajes/github.png" title="GitHub"></div>
+                    <div class="icon"><img src="media/lenguajes/figma.png" title="Figma"></div>
+                    <div class="icon"><img src="media/lenguajes/mysql.png" title="MySQL"></div>
+                    <div class="icon"><img src="media/lenguajes/mariadb.png" title="MariaDB"></div>
+                </div>
+                <p>Lenguajes, librerías y frameworks que tengo cierto interés en aprender:</p>
+                <div class="lenguajes-de-interes">
+                    <div class="icon"><img src="media/lenguajes/node-js.png" title="Node.js - Entorno de ejecución JavaScript"></div>
+                    <div class="icon"><img src="media/lenguajes/react.png" title="React - Librería de JavaScript"></div>
+                    <div class="icon"><img src="media/lenguajes/vue.png" title="Vue - Framework de JavaScript"></div>
+                    <div class="icon"><img src="media/lenguajes/typescript.png" title="TypeScript - Superconjunto de JavaScript"></div>
+                    <div class="icon"><img src="media/lenguajes/electron.png" title="Electron - Framework de JavaScript"></div>
+                    <div class="icon"><img src="media/lenguajes/three.png" title="Three - Librería de JavaScript"></div>
+                    <div class="icon"><img src="media/lenguajes/angular.png" title="Angular - Framework de JavaScript"></div>
+                    <div class="icon"><img src="media/lenguajes/jquery.png" title="jQuery - Librería de JavaScript"></div>
+                    <div class="icon"><img src="media/lenguajes/laravel.png" title="Laravel - Framework de PHP"></div>
+                    <div class="icon"><img src="media/lenguajes/symfony.png" title="Symfony - Framework de PHP"></div>
+                    <div class="icon"><img src="media/lenguajes/bootstrap.png" title="Bootstrap"></div>
+                    <div class="icon"><img src="media/lenguajes/tailwind.png" title="Tailwind - Framework de CSS"></div>
+                    <div class="icon"><img src="media/lenguajes/sass.png" title="Sass"></div>
+                    <div class="icon"><img src="media/lenguajes/flask.png" title="Flask - Framework de Python"></div>
+                    <div class="icon"><img src="media/lenguajes/numpy.png" title="NumPy - Librería de Python"></div>
+                    <div class="icon"><img src="media/lenguajes/pytorch.png" title="PyTorch - Librería de Python"></div>
+                    <div class="icon"><img src="media/lenguajes/django.png" title="Django - Framework de Python"></div>
+                    <div class="icon"><img src="media/lenguajes/pandas.png" title="Pandas - Librería de Python"></div>
+                    <div class="icon"><img src="media/lenguajes/thymeleaf.png" title="Thymeleaf - Librería de Java"></div>
+                    <div class="icon"><img src="media/lenguajes/spring.png" title="Spring - Framework de Java"></div>
+                </div>
+                <p>Tecnologías que me interesa aprender:</p>
+                <div class="tecnologias-de-interes">
+                    <div class="icon"><img src="media/lenguajes/docker.png" title="Docker"></div>
+                    <div class="icon"><img src="media/lenguajes/kubernetes.png" title="Kubernetes"></div>
+                    <div class="icon"><img src="media/lenguajes/firebase.png" title="Firebase"></div>
+                    <div class="icon"><img src="media/lenguajes/mongodb.png" title="MongoDB"></div>
+                    <div class="icon"><img src="media/lenguajes/postgresql.png" title="PostgreSQL"></div>
+                    <div class="icon"><img src="media/lenguajes/tensorflow.png" title="TensorFlow"></div>
+                    <div class="icon"><img src="media/lenguajes/ai.png" title="Inteligencia Artificial"></div>
+                </div>
+            </div>
+            <div class="zona-personal" id="id-acercaDeMi">
+                <h1>Acerca de mí</h1>
+            </div>
+            <div class="zona-contacto" id="id-contacto">
+                <h1>Contacto</h1>
+            </div>
+        </main>
+        <footer>
+            <h1>Footer</h1>
+        </footer>
     </body>
 </html>
